@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    background: #121B22;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b94a3e;
+    border-radius: 10px;
+}
+
+
+/*header-start*/
+
+.head {
+    background-color: #121B22;
+    padding: 10px 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 2005;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head .logo {
+    font-size: 2em;
+    color: #b94a3e;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.head .logo:hover {
+    color: #214c62;
+}
+
+.head .links a {
+    text-decoration: none;
+    color: #b94a3e;
+    font-size: 1.6em;
+    padding-left: 5px;
+    transition: 0.3s;
+}
+
+.head .links a:hover {
+    color: #214c62;
+}
+
+
+/*center workspace*/
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*header-end*/
+
+
+/*SECTION-ABOUT*/
+
+.about {
+    padding: 350px 200px;
+    background-image: url(images/fence_grid_hole_133215_1600x1200.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.about h1 {
+    color: #e8dfe0;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about .hi {
+    margin-top: 90px;
+    margin-bottom: 0;
+}
+
+.about h1:hover {
+    color: #b94a3e;
+}
+
+.about .social {
+    margin-left: 100px;
+}
+
+.about .social a {
+    color: #e8dfe0;
+    font-size: 1.6em;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.about .social a:hover {
+    color: #b94a3e;
+}
+
+
+/*SECTION-ABOUT-END*/
+
+
+/*SECTION-service*/
+
+.service {
+    background-color: #121B22;
+    padding: 150px 300px 50px;
+    height: 100vh;
+}
+
+.title {
+    color: #b94a3e;
+    text-align: center;
+    transition: 0.6s;
+    cursor: pointer;
+    margin-bottom: 50px;
+    animation: logo linear 2s;
+}
+
+.contant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0, 0, 100, inset;
+}
+
+.card {
+    display: flexbox;
+    padding: 100px 10px;
+    background-color: #214c62;
+    border-radius: 25px;
+    width: 50vh;
+    position: relative;
+    margin-right: 20px;
+    justify-content: center;
+    transition: 0.6s;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(#101010, #cf0e0e);
+}
+
+.icon {
+    position: relative;
+    margin-left: 20px;
+}
+
+.icon i {
+    color: #b94a3e;
+    font-size: 50px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.card h1 {
+    color: #b94a3e;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.card h5 {
+    cursor: pointer;
+    text-align: center;
+}
+
+.card:hover {
+    background-color: #101010;
+    color: #b94a3e;
+}
+
+@keyframes logo {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.title:hover {
+    color: #e8dfe0;
+}
+
+
+/*SECTION-service-end*/
+
+
+/*up*/
+
+.up {
+    background-color: #121B22;
+    position: fixed;
+    top: 92%;
+    left: 90%;
+    padding: 15px 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px hsla(0, 0%, 10%, 0.363);
+}
+
+.up a i {
+    font-size: 3em;
+    color: #b94a3e;
+    transition: 0.3s;
+}
+
+.up a i:hover {
+    color: #214c62;
+}
+
+
+/*up-finsh*/
+
+footer {
+    height: 20vh;
+    background: #101010;
+}
+
+.copy {
+    font-weight: 900;
+    color: #b94a3e;
+    text-align: left;
+    padding-top: 10vh;
+    padding-left: 30vh;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+}
